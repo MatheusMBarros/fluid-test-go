@@ -51,7 +51,7 @@ cd fluid-test-go.
 Após configurar o ambiente e gerar os dados de publicação, você pode rodar o microserviço de contagem de operações com o seguinte comando:
 
 ```bash
-go run main.go
+make run
 ```
 
 O serviço ficará ouvindo o RabbitMQ e processará as mensagens. Ele vai contar quantas operações de criação, atualização e exclusão foram feitas para cada usuário e, depois de 5 segundos sem novas mensagens, irá salvar as estatísticas em arquivos JSON.
